@@ -29,6 +29,7 @@ btnMain.forEach((btn, i) => {
       setTimeout(() => {
         Swal.fire({
           title: 'Es wird ein Mädchen 😍',
+          // title: 'Будет девочка 😍',
           // imageUrl: '../images/babystuff.png',
           // background: '#fff url(../images/babystuff.png) no-repeat top center/cover',
           imageHeight: 500,
