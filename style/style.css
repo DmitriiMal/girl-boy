@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(245, 233, 220, 0.685);
+}
+
+.container {
+  max-width: 400px;
+  padding: 1.5rem;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+}
+
+.grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.grid .btn {
+  padding: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  aspect-ratio: 1/1;
+  background: url("../images/flasche.png") no-repeat center center/cover;
+  transition: all 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+.grid .btn:hover {
+  transform: scale(1.03);
+}
+.grid .girl {
+  background: url("../images/maedl.png") no-repeat center center/cover;
+}
+.grid .boy {
+  background: url("../images/bub.png") no-repeat center center/cover;
+}
+.grid .btn-main {
+  z-index: 1;
+}
+.grid .scale {
+  transform: scale(1.2) !important;
+  border: 1px solid rgb(245, 233, 220);
+}/*# sourceMappingURL=style.css.map */
