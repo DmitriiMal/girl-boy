@@ -25,11 +25,16 @@ btnMain.forEach((btn, i) => {
     console.log(btnMainCount);
 
     if (!btnMainCount.includes(0)) {
+      setTimeout(itemScale, 500);
       setTimeout(() => {
-        Swal.fire('Es wird ein … 😍');
+        Swal.fire({
+          title: 'Es wird ein Mädchen 😍',
+          // imageUrl: '../images/babystuff.png',
+          // background: '#fff url(../images/babystuff.png) no-repeat top center/cover',
+          imageHeight: 500,
+          showConfirmButton: false,
+        });
       }, 2000);
-
-      itemScale();
     }
   });
 });
@@ -39,3 +44,11 @@ function itemScale() {
     btn.classList.add('scale');
   });
 }
+
+// Swal.fire({
+//   title: 'Es wird ein Mädchen 😍',
+//   imageUrl: '../images/babystuff.png',
+//   // background: '#fff url(../images/babystuff.png) no-repeat top center/cover',
+//   imageHeight: 500,
+//   showConfirmButton: false,
+// });
