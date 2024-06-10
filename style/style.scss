@@ -28,6 +28,11 @@ p {
   text-align: center;
 }
 
+.header-ru {
+  @extend .header;
+  font-size: 1.7rem;
+}
+
 .grid {
   margin-top: 2.5rem;
   display: grid;

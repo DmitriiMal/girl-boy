@@ -21,10 +21,14 @@ body {
   margin: auto;
 }
 
-.header,
+.header, .header-ru,
 h1,
 p {
   text-align: center;
+}
+
+.header-ru {
+  font-size: 1.7rem;
 }
 
 .grid {
