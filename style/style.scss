@@ -44,7 +44,7 @@ p {
     transition: all 0.3s ease-in-out, background 0.3s ease-in-out;
 
     &:hover {
-      transform: scale(1.03);
+      // transform: scale(1.03);
     }
   }
 
@@ -66,6 +66,7 @@ p {
     animation: blinking 2s 1s;
   }
 }
+
 @keyframes blinking {
   16% {
     opacity: 0;
@@ -84,6 +85,30 @@ p {
   }
 
   80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.burst {
+  animation: burst 0.3s ease-in-out;
+}
+
+@keyframes burst {
+  25% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+
+  75% {
+    transform: scale(1.03);
     opacity: 0;
   }
 

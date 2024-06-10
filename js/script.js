@@ -1,3 +1,4 @@
+// Variables
 const btnGirl = document.querySelectorAll('.btn-girl');
 const btnBoy = document.querySelectorAll('.btn-boy');
 const btnMain = document.querySelectorAll('.btn-main');
@@ -6,14 +7,24 @@ let btnMainCount = [0, 0, 0];
 // Get background from Girl
 btnGirl.forEach((btn) => {
   btn.addEventListener('click', () => {
-    btn.classList.add('girl');
+    btn.classList.add('burst');
+  });
+  btn.addEventListener('click', () => {
+    setTimeout(() => {
+      btn.classList.add('girl');
+    }, 100);
   });
 });
 
 // Get background from Boy
 btnBoy.forEach((btn) => {
   btn.addEventListener('click', () => {
-    btn.classList.add('boy');
+    btn.classList.add('burst');
+  });
+  btn.addEventListener('click', () => {
+    setTimeout(() => {
+      btn.classList.add('boy');
+    }, 100);
   });
 });
 
@@ -21,8 +32,6 @@ btnBoy.forEach((btn) => {
 btnMain.forEach((btn, i) => {
   btn.addEventListener('click', () => {
     btnMainCount[i] = 1;
-    console.log(i);
-    console.log(btnMainCount);
 
     if (!btnMainCount.includes(0)) {
       // Add scale and blinking animation
