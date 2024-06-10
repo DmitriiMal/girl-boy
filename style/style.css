@@ -11,6 +11,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgba(245, 233, 220, 0.685);
+  position: relative;
+  color: #545454;
 }
 
 .container {
@@ -37,8 +39,12 @@ p {
   border-radius: 50%;
   cursor: pointer;
   aspect-ratio: 1/1;
-  background: url("../images/flasche.png") no-repeat center center/cover;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background: url("../images/fuesse.png") no-repeat center center/cover;
   transition: all 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+.grid .btn:hover {
+  transform: scale(1.03);
 }
 .grid .girl {
   background: url("../images/maedl.png") no-repeat center center/cover;
@@ -92,6 +98,18 @@ p {
     opacity: 0;
   }
   100% {
+    transform: scale(1.03);
     opacity: 1;
   }
+}
+#stars {
+  z-index: 3;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.show {
+  display: block !important;
 }/*# sourceMappingURL=style.css.map */

@@ -2,6 +2,7 @@
 const btnGirl = document.querySelectorAll('.btn-girl');
 const btnBoy = document.querySelectorAll('.btn-boy');
 const btnMain = document.querySelectorAll('.btn-main');
+const stars = document.querySelector('#stars');
 let btnMainCount = [0, 0, 0];
 
 // Get background from Girl
@@ -40,13 +41,14 @@ btnMain.forEach((btn, i) => {
       // Alert
       setTimeout(() => {
         Swal.fire({
-          title: 'Es wird ein Mädchen 😍',
-          // title: 'Будет девочка 😍',
+          title: 'Es wird ein Mädl! 😍',
+          // title: 'Будет девочка! 😍',
           // imageUrl: '../images/babystuff.png',
           // background: '#fff url(../images/babystuff.png) no-repeat top center/cover',
           imageHeight: 500,
           showConfirmButton: false,
         });
+        stars.classList.add('show');
       }, 4500);
     }
   });
