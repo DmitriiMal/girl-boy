@@ -107,10 +107,10 @@ p {
   }
 }
 #stars {
-  z-index: 3;
+  z-index: 1061;
   width: 100vw;
   position: absolute;
-  top: 0;
+  top: 6rem;
   display: none;
 }
 
