@@ -63,5 +63,31 @@ p {
   .scale {
     transform: scale(1.2) !important;
     border: 1px solid rgb(245, 233, 220);
+    animation: blinking 2s 1s;
+  }
+}
+@keyframes blinking {
+  16% {
+    opacity: 0;
+  }
+
+  32% {
+    opacity: 1;
+  }
+
+  48% {
+    opacity: 0;
+  }
+
+  64% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
