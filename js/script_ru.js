@@ -41,8 +41,7 @@ btnMain.forEach((btn, i) => {
       // Alert
       setTimeout(() => {
         Swal.fire({
-          title: 'Es wird ein Bub! 😍',
-          // title: 'Будет мальчик! 😍',
+          title: 'Будет мальчик! 😍',
           // imageUrl: '../images/babystuff.png',
           // background: '#fff url(../images/babystuff.png) no-repeat top center/cover',
           imageHeight: 500,
@@ -60,17 +59,3 @@ function itemScale() {
     btn.classList.add('scale');
   });
 }
-
-// Swal.fire({
-//   title: 'Es wird ein Mädl 😍',
-//   imageUrl: '../images/babystuff.png',
-//   // background: '#fff url(../images/babystuff.png) no-repeat top center/cover',
-//   imageHeight: 500,
-//   showConfirmButton: false,
-//   backdrop: `
-//     rgba(0,0,0,0.4)
-//     url("/images/nyan-cat.gif")
-//     left top
-//     no-repeat
-//   `,
-// });
